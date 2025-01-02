@@ -26,5 +26,6 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+  "dotnetAcquisitionExtension.proxyUrl": "http://127.0.0.1:1087"
 }
