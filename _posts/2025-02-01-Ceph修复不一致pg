@@ -1,0 +1,17 @@
+---
+title: Ceph修复不一致pg
+date: 2025-02-01+0800
+categories: [运维,Ceph]
+tags: [ceph]
+description: 
+---
+
+1. 查看不一致的pg
+```shell
+ceph health detail
+```
+
+2. 修复不一致的pg，替换掉pg id为步骤1中显示的pg id
+```shell
+ceph pg repair <pg_id_1>
+```
