@@ -1,0 +1,23 @@
+---
+title: npm run dev异常：digital envelope routines::unsupported
+date: 2025-05-22+0800
+categories: [web]
+tags: [node,npm,webpack]
+description: 
+---
+
+#### 问题
+执行 npm run dev，报错 Error: error:0308010C:digital envelope routines::unsupported
+
+#### 原因
+Node.js 从17版本开始，OpenSSL 从1.x升级到了OpenSSL 3，弃用了老的加密算法；
+但是webpack还依赖这些被弃用的加密算法
+
+#### 解决方法
+先执行 export NODE_OPTIONS=--openssl-legacy-provider
+
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+
+npm run dev
+···
