@@ -30,5 +30,5 @@ npm run dev
 "scripts": {
    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build"
-},
+}
 ```
