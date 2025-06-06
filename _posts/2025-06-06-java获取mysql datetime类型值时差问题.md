@@ -26,12 +26,12 @@ description:
     jdbc:mysql://{host}:{port}/{database}?serverTimezone={GMT%2B8}
     ```
 - jvm
-    TZ环境变量
+  : TZ环境变量
      ```shell
      export TZ=Asia/Shanghai
      ```
 
-    JVM property -Duser.timezone
+  : JVM property -Duser.timezone
     ```shell
     java -Duser.timezone=Asia/Shanghai -jar {x.jar}
     ```
