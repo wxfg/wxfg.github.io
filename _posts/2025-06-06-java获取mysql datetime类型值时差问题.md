@@ -8,7 +8,9 @@ description:
 
 #### 基础
 - mysql datetime类型不包含时区信息
+
 - java Date类型不包含时区信息
+
 - mysql时区
   : 全局级别时区
     ```sql
@@ -26,16 +28,12 @@ description:
     jdbc:mysql://{host}:{port}/{database}?serverTimezone={GMT%2B8}
     ```
 - jvm时区
-  : TZ环境变量
-     ```shell
-     export TZ=Asia/Shanghai
-     ```
-
-  : JVM property -Duser.timezone
     ```shell
-    java -Duser.timezone=Asia/Shanghai -jar {x.jar}
-    ```
+     jinfo {pid} | grep user.timezone
+     java -Duser.timezone=Asia/Shanghai -jar {x.jar}
+     ```
 - 写入mysql datetime时，从jvm时区转换为mysql时区对应的日期时间值
+
 - 从mysql读取datetime时，从mysql时区转换为jvm时区对应的日期时间值
 
 #### 原因
