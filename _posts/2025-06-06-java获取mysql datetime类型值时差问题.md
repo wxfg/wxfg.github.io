@@ -7,9 +7,9 @@ description:
 ---
 
 #### 基础
-- mysql datime类型不包含时区信息
+- mysql datetime类型不包含时区信息
 - java Date类型不包含时区信息
-- mysql
+- mysql时区
   : 全局级别时区
     ```sql
     SELECT @@GLOBAL.time_zone;
@@ -25,7 +25,7 @@ description:
     ```java
     jdbc:mysql://{host}:{port}/{database}?serverTimezone={GMT%2B8}
     ```
-- jvm
+- jvm时区
   : TZ环境变量
      ```shell
      export TZ=Asia/Shanghai
@@ -35,10 +35,11 @@ description:
     ```shell
     java -Duser.timezone=Asia/Shanghai -jar {x.jar}
     ```
-- 写入时，java Date值会从jvm时区转换为mysql时区；读取时，mysql datetime值会从mysql时区转换为jvm时区
+- 写入mysql datetime时，从jvm时区转换为mysql时区对应的日期时间值
+- 从mysql读取datetime时，从mysql时区转换为jvm时区对应的日期时间值
 
 #### 原因
 jvm与mysql时区不一致
 
 #### 解决方法
-将jvm与mysql时区设置一致，建议在分别用-Duser.timezone和jdbc设置
+将jvm与mysql时区设置一致，建议分别用-Duser.timezone和jdbc设置
