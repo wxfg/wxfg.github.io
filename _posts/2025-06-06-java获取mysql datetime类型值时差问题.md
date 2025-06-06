@@ -17,12 +17,12 @@ description:
     ```
 
   : 会话级别时区
-     ```sql
+    ```sql
     SELECT @@SESSION.time_zone;
     SET time_zone = '+8:00';
     ```
     
-    ```jdbc
+    ```java
     jdbc:mysql://{host}:{port}/{database}?serverTimezone={GMT%2B8}
     ```
 - jvm
