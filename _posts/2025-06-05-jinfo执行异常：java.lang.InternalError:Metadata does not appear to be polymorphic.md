@@ -16,6 +16,6 @@ Ubuntu  22.04 + OpenJDK 1.8
 需要安装 openjdk dbg包
 
 #### 解决方法
-```shell
+```bash
 sudo apt-get install openjdk-8-dbg
 ```

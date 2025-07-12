@@ -7,6 +7,6 @@ description:
 ---
 
 Mega/Broadcom RAID控制器使用命令行StorCLI定位磁盘，点亮硬盘灯
-```shell
+```bash
 storcli /{cx}/{ex}/{sx} start locate
 ```

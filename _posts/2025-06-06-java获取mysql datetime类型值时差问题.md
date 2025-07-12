@@ -28,7 +28,7 @@ description:
     jdbc:mysql://{host}:{port}/{database}?serverTimezone={GMT%2B8}
     ```
 - jvm时区
-    ```shell
+    ```bash
      jinfo {pid} | grep user.timezone
      java -Duser.timezone=Asia/Shanghai -jar {x.jar}
      ```
