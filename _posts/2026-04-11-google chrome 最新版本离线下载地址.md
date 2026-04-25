@@ -7,21 +7,21 @@ description:
 ---
 
 ## Mac
-https://www.google.com/chrome/?system=true&standalone=1&platform=mac
+<https://www.google.com/chrome/?system=true&standalone=1&platform=mac>
 
 ## Linux
 ### Debian/Ubuntu
-https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+<https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb>
 
 ### Debian/Ubuntu
-https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+<https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm>
 
 ## Windows
 ### ARM64
-https://www.google.com/chrome/?system=true&standalone=1&platform=win_arm64
+<https://www.google.com/chrome/?system=true&standalone=1&platform=win_arm64>
 
 ### x86
-https://www.google.com/chrome/?system=true&standalone=1&platform=win
+<https://www.google.com/chrome/?system=true&standalone=1&platform=win>
 
 ### x64
-https://www.google.com/chrome/?system=true&standalone=1&platform=win64
+<https://www.google.com/chrome/?system=true&standalone=1&platform=win64>
