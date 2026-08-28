@@ -12,11 +12,11 @@ description:
 ## Linux
 ### Debian/Ubuntu
 <https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb>
-https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb
+<https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb>
 
 ### Fedora/openSUSE
 <https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm>
-https://dl.google.com/linux/direct/google-chrome-stable_current_aarch64.rpm
+<https://dl.google.com/linux/direct/google-chrome-stable_current_aarch64.rpm>
 
 ## Windows
 ### ARM64
